@@ -4,65 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("user_tgQyliHcrmVmTt0avBqHP");
+      })();
+    </script>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
     <title>CGPA Calculator</title>
   </head>
   <body>
+      <div id="heading">
+        <div> Range of marks allowed: 0 to 100 </div>
+        <div> Range of credits: 2 to 10 </div>
+      </div>
 
-    <div id="external_div">
-      <form>
-        <div id="block">
-          <label for="subject1">Subject 1</label>
-          <div>
-            <input type="text" id="subject1" name="subject1" placeholder="Enter marks">
+      <div id="external_div">
+        <form>
+          <div class="block">
+            <label for="subject1">Subject 1</label>
+            <div>
+              <input type="number" id="subject1" name="subject1" placeholder="Enter marks">
+            </div>
+            <div>
+              <input type="number"  id="subject1_credits" name="subject1_credits" placeholder="Enter credits">
+            </div>
           </div>
-          <div>
-            <input type="text" id="subject1_credits" name="subject1_credits" placeholder="Enter credits">
-          </div>
-        </div>
 
-        <div id="block">
-          <label for="subject2">Subject 2</label>
-          <div>
-            <input type="text" id="subject2" name="subject2" placeholder="Enter marks">
+          <div class="block">
+            <label for="subject2">Subject 2</label>
+            <div>
+              <input type="number" id="subject2" name="subject2" placeholder="Enter marks">
+            </div>
+            <div>
+              <input type="number"  id="subject2_credits" name="subject2_credits" placeholder="Enter credits">
+            </div>
           </div>
-          <div>
-            <input type="text" id="subject2_credits" name="subject2_credits" placeholder="Enter credits">
-          </div>
-        </div>
 
-        <div id="block">
-          <label for="subject3">Subject 3</label>
-          <div>
-            <input type="text" id="subject3" name="subject3" placeholder="Enter marks">
+          <div class="block">
+            <label for="subject3">Subject 3</label>
+            <div>
+              <input type="number" id="subject3" name="subject3" placeholder="Enter marks">
+            </div>
+            <div>
+              <input type="number"  id="subject3_credits" name="subject3_credits" placeholder="Enter credits">
+            </div>
           </div>
-          <div>
-            <input type="text" id="subject3_credits" name="subject3_credits" placeholder="Enter credits">
+
+          <div class="block">
+            <label for="subject4">Subject 4</label>
+            <div id="block">
+              <input type="number" id="subject4" name="subject4" placeholder="Enter marks">
+            </div>
+            <div>
+              <input type="number"  id="subject4_credits" name="subject4_credits" placeholder="Enter credits">
+            </div>
           </div>
-        </div>
 
-        <div id="block">
-          <label for="subject1">Subject 4</label>
-          <div id="block">
-            <input type="text" id="subject4" name="subject4" placeholder="Enter marks">
+          <div class="block">
+            <label for="subject5">Subject 5</label>
+            <div id="block">
+              <input type="number" id="subject5" name="subject5" placeholder="Enter marks">
+            </div>
+            <div>
+              <input type="number"  id="subject5_credits" name="subject5_credits" placeholder="Enter credits">
+            </div>
           </div>
-          <div>
-            <input type="text" id="subject4_credits" name="subject4_credits" placeholder="Enter credits">
+
+          <div class="block">
+            <label for="subject6">Subject 6</label>
+            <div id="block">
+              <input type="number" id="subject6" name="subject4" placeholder="Enter marks">
+            </div>
+            <div>
+              <input type="number"  id="subject6_credits" name="subject6_credits" placeholder="Enter credits">
+            </div>
           </div>
-        </div>
 
-        <!--
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select> -->
+          <div class="block">
+            <label for="subject7">Subject 7</label>
+            <div id="block">
+              <input type="number" id="subject7" name="subject7" placeholder="Enter marks">
+            </div>
+            <div>
+              <input type="number" id="subject7_credits" name="subject7_credits" placeholder="Enter credits">
+            </div>
+          </div>
 
-        <input type="submit" value="Get CGPA">
-      </form>
-    </div>
+          <!--
+          <div id="button">
+            <button id="button">Add Subject</button>
+          </div> -->
 
+          <input id="input" type="submit" value="Get CGPA">
+        </form>
+      </div>
+
+      <div id="result">
+
+      </div>
+
+      <div id="send_email_div">
+
+      </div>
+
+      <script src="index.js"></script>
     </body>
 </html>

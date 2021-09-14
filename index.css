@@ -1,4 +1,4 @@
-input[type='text'],
+input[type='number'],
 select {
   width: 100%;
   padding: 12px 20px;
@@ -24,13 +24,43 @@ input[type='submit']:hover {
   background-color: #45a049;
 }
 
+label {
+  /* text-decoration: bold; */
+  padding: 1rem;
+}
+
 #external_div {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-#block {
+.block {
   display: flex;
-  padding: 1px;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#button button {
+  background-color: #a49694;
+  cursor: pointer;
+}
+
+div[id='result'] {
+  text-align: center;
+  font-size: larger;
+}
+
+div[id='heading'] {
+  text-align: center;
+}
+
+div[id='send_email_div'] {
+  text-align: center;
 }
